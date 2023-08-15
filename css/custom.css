@@ -1,0 +1,222 @@
+/* navbar font style */
+@media (min-width: 992px) {
+    .site-menu-main .nav-link-item {
+        letter-spacing: 4px;
+        font-weight: 300;
+    }
+}
+
+/* for mobile hamburger (get in touch button) */
+.get-in-touch-mobile {
+    position: absolute;
+    bottom: 16px;
+    width: 80%;
+    padding: 0 !important;
+    left: 32px;
+}
+
+.get-in-touch-mobile .icon-arrow-corner {
+    transform: rotate(-45deg);
+}
+
+/* sticky navbar for mobile */
+.site-header--sticky:not(.mobile-sticky-enable) {
+    position: fixed !important;
+}
+
+/* what we do font size */
+.hero-section-01 .hero-content p {
+    margin-bottom: 40px;
+}
+
+@media (min-width: 425px) {
+    .hero-section-01 .hero-content p {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+}
+
+/* hero 1 - remove whitespace for mobile */
+@media (max-width: 500px) {
+    .hero-section-01 {
+        padding-top: 60px;
+    }
+}
+
+/* hero-content image in what we do section */
+@media (max-width: 500px) {
+    .hero-content__image {
+        padding-bottom: 60px;
+    }
+}
+
+/* Card text font size */
+@media (min-width: 425px) {
+    .hero-content__details .details-content p {
+        font-size: 14px;
+    }
+}
+
+/* position of yellow circle for mobile */
+.hero-content__navigation-circle-wrapper {
+    position: absolute;
+    top: -23%;
+    right: 12%;
+    width: 20.15%;  
+}
+
+@media (max-width: 500px) {
+    .hero-content__navigation-circle-wrapper {
+        top: -18%;
+    }
+}
+
+/* grid options for mobile */
+@media (max-width: 500px) {
+    .hero-content__details {
+        display: block;
+    }
+
+    .hero-content__details .details-content {
+        color: #ffffff;
+        margin-bottom: 24px;
+    }
+
+    .hero-content__details .details-content h4 {
+        color: #ffffff;
+    }
+
+    .hero-content__details .details-content h5 {
+        display: inline-block;
+        padding: 3px 6px;
+        background-color: #6E50FF;
+        color: #ffffff;
+        font-size: 15px;
+        margin: 10px 0;
+    }
+
+    .hero-content__details img {
+        height: 125px;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-content__details img {
+        height: 220px;
+    }
+}
+
+/* section padding reduce for mobile */
+@media (max-width: 500px) {
+    .section-padding {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+/* send message button for mobile */
+@media (max-width: 500px) {
+    .send-msg {
+        margin-bottom: 16px;
+    }
+}
+
+
+/* contact-content__image */
+@media (max-width: 500px) {
+    .contact-content__image {
+        margin: 24px;
+    }
+}
+
+
+/* project details */
+.project-details-hero {
+    background-color: black;
+    padding: 145px 0 120px;
+}
+
+@media (max-width: 500px) {
+    .project-details-hero {
+        background-color: black;
+        padding: 60px 0;
+    }   
+}
+
+.project-details .hero-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-details .hero-content__title {
+    font-size: 64px;    
+}
+@media (max-width: 500px) {
+    .project-details .hero-content__title {
+        font-size: 20px;
+    }
+}
+
+.project-details .hero-secondary-text {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.project-details .hero-secondary-text span {
+    color: #5B5B5B;
+    padding-right: 2px;
+}
+
+.project-details-hero-img {
+    width: 100%;
+    height: 703px;
+    margin: 140px 0 50px;
+}
+
+@media (max-width: 500px) {
+    .project-details-hero-img {
+        height: 120px;
+        margin: 20px 0 20px;
+    }   
+}
+
+.grid-text {
+    padding: 0 0 40px;
+    border-bottom: 1px solid #DEE2E6;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 500px) {
+    .grid-text {
+        margin-bottom: 0;
+    }    
+}
+
+.grid-text span {
+    color: #050505;
+}
+
+.grid-text p {
+    font-weight: bold;
+}
+
+.secondary-details-text {
+    padding: 40px 0;
+}
+
+.secondary-details-text h5 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.secondary-details-text p {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.grid-image {
+    margin-bottom: 24px;
+}

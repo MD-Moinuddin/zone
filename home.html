@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="color-scheme" content="dark light">
+  <title>
+    Landing Page
+  </title>
+  <link rel="shortcut icon" href="./image/logo.svg" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" type="text/css" href="./fonts/typography/fonts.css">
+  <link rel="stylesheet" href="./fonts/fontawesome/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/aos/aos.min.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/slick/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/slick/slick-theme.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" type="text/css" href="./plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+  <!-- custom.css
+============================================= -->
+<link rel="stylesheet" type="text/css" href="./css/custom.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="preloader-wrapp">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+  <div class="page-wrapper overflow-hidden">
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~
+     Header Area
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <header class="site-header site-header--sticky site-header--black">
+      <div class="">
+        <nav class="navbar site-navbar border-none">
+          <div class="brand">
+            <a href="#" class="brand-link">
+              <img class="brand-logo" src="./image/logo.svg" alt="logo">
+            </a>
+          </div>
+          <div class="menu-block-wrapper ">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <a href="index.html">
+                  <img src="./image/logo-dark.svg" alt="brand logo">
+                </a>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link-item drop-trigger">ABOUT
+                  </a>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#services" class="nav-link-item drop-trigger">SERVICES</a>
+                </li>
+                <!-- <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Blog<i class="fas fa-angle-down"></i>
+                  </a>
+                  <div class="sub-menu" id="submenu-23">
+                    <ul class="sub-menu_list">
+                      <li class="sub-menu_item">
+                        <a href="blog-details.html">
+                          <span class="menu-item-text">Blog Details</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li> -->
+                <li class="nav-item">
+                  <a href="#our_works" class="nav-link-item drop-trigger">OUR WORK
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#clients" class="nav-link-item drop-trigger">CLIENTS
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#get_in_touch" class="btn btn-primary hvr-fill-black get-in-touch-mobile d-block d-md-none">Get in touch
+                    <i class="fa-solid fa-arrow-right icon-arrow-corner"></i>
+                  </a>
+                </li>
+                <!-- <li class="nav-item nav-item-has-children cart-nav">
+                  <a href="#" class="nav-link-item drop-trigger">Cart</a>
+                </li> -->
+              </ul>
+            </nav>
+          </div>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~
+          mobile menu trigger
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~
+            Mobile Menu Hamburger Ends
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+          <div class="content-button-block d-none d-md-block">
+            <a href="#get_in_touch" class="btn btn-primary hvr-fill-black">Get in touch
+              <i class="fa-solid fa-arrow-right icon-arrow-corner"></i>
+            </a>
+          </div>
+
+          <!-- <div class="header-cta-btn-wrapper">
+            <div class="header-group-2">
+              <div class="menu-link-item has-children">
+                <div class="menu-btn">
+                  <img src="./image/icons/shopping-bag.svg" alt="icon">
+                </div>
+                <div class="sub-cart-menu">
+                  <div class="sub-cart-menu-wrapper">
+                    <div class="cart-menu_item-wrapper">
+                      <div class="cart-menu_item">
+                        <div class="cart-menu_item-info">
+                          <div class="cart-menu_item-info-image">
+                            <img src="./image/common/pillow.png" alt="">
+                          </div>
+                          <div>
+                            <h4 class="cart-title">White Pillows</h4>
+                            <p class="cart-price">$131.00</p>
+                            <p class="cart-quantity">x1</p>
+                          </div>
+                        </div>
+                        <button class="close-btn">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.86536 13.4166L0.582031 12.1333L5.71536 6.99998L0.582031 1.86665L1.86536 0.583313L6.9987 5.71665L12.132 0.583313L13.4154 1.86665L8.28203 6.99998L13.4154 12.1333L12.132 13.4166L6.9987 8.28331L1.86536 13.4166Z" fill="#959595" />
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="cart-menu_item">
+                        <div class="cart-menu_item-info">
+                          <div class="cart-menu_item-info-image">
+                            <img src="./image/common/chair.png" alt="">
+                          </div>
+                          <div>
+                            <h4 class="cart-title">Wooden Chair</h4>
+                            <p class="cart-price">$315.00</p>
+                            <p class="cart-quantity">x1</p>
+                          </div>
+                        </div>
+                        <button class="close-btn">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.86536 13.4166L0.582031 12.1333L5.71536 6.99998L0.582031 1.86665L1.86536 0.583313L6.9987 5.71665L12.132 0.583313L13.4154 1.86665L8.28203 6.99998L13.4154 12.1333L12.132 13.4166L6.9987 8.28331L1.86536 13.4166Z" fill="#959595" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cart-menu_item-total">
+                      <div class="amount">
+                        <p>Total</p>
+                        <p>$131.00</p>
+                      </div>
+                      <a href="#" class="btn btn-primary hvr-fill-black">View Cart &amp; Checkout
+                        <i class="fa-solid fa-arrow-right icon-arrow-corner"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="menu-link-item" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <div class="menu-btn">
+                  <img src="./image/icons/app-grid.svg" alt="icon">
+                </div>
+              </a>
+            </div>
+          </div> -->
+        </nav>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-scroll="true">
+        <div class="offcanvas-header">
+          <button type="button" class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="./image/icons/close.svg" alt="icon">
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="offcanvas-body-text" id="offcanvasExampleLabel">
+            <div class="brand">
+              <a href="#" class="brand-link">
+                <img class="brand-logo" src="./image/logo-dark.svg" alt="logo">
+              </a>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla
+            </p>
+          </div>
+          <div class="offcanvas-contact-widget">
+            <div class="contact-widget">
+              <h3 class="contact-widget__title">Find us</h3>
+              <span class="contact-widget__text">Dattner Architects 498Seventh Ave20th FloorNew York, NY 10018</span>
+            </div>
+            <div class="contact-widget">
+              <h3 class="contact-widget__title">get in touch</h3>
+              <span class="contact-widget__text">+123 456789
+              admin@bizdev.com
+            </span>
+            </div>
+          </div>
+        </div>
+        <div class="offcanvas-footer">
+          <div class="offcanvas-social-links">
+            <a href="#">
+              <img src="./image/icons/facebook.svg" alt="facebook">
+              facebook
+            </a>
+            <span>
+            /
+          </span>
+            <a href="#">
+              <img src="./image/icons/twitter.svg" alt="twitter">
+              twitter
+            </a>
+            <span>
+            /
+          </span>
+            <a href="#">
+              <img src="./image/icons/youtube.svg" alt="youtube">
+              youtube
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     Hero Section 02
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="hero-section-02">
+      <div class="hero-fluid-slider" id="heroSlider">
+        <div class="hero-slide-single bg-image overlay-07" style="background-image: url(image/hero/hero-background.png);">
+          <div class="container">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-xxl-10 col-md-9" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+                <div class="hero-content">
+                  <div class="hero-content_text-block">
+                    <h1 class="hero-content__title heading-xxl text-sand">
+                        WE ARE A YOUNG & CREATIVE POST-PRODUCTION COMPANY
+                    </h1>
+                    <p>
+                        At ZONE PRODUCTIONS, we are more than just a post-production company. we also have expertise in shooting special events. <br>
+                        Based in Atlanta, GA, our services extend beyond the post-production realm.
+                    </p>
+                  </div>
+                  <div class="hero-content_button-group">
+                    <a href="#get_in_touch" class="btn btn-primary hvr-fill-black">Get in touch
+                      <i class="fa-solid fa-arrow-right icon-arrow-corner"></i>
+                    </a>
+                    <a href="#our_works" class="btn btn-white hvr-white-primary">our works
+                      <i class="fa-solid fa-arrow-right icon-arrow-corner"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slide-single bg-image overlay-07" style="background-image: url(image/hero/hero-background.png);">
+          <div class="container">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-xxl-10 col-md-9" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+                <div class="hero-content">
+                  <div class="hero-content_text-block">
+                    <h1 class="hero-content__title heading-xxl text-sand">
+                      Timeless homes that are designed to be lived in
+                    </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                      in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
+                    </p>
+                  </div>
+                  <div class="hero-content_button-group">
+                    <a href="./contact.html" class="btn btn-primary hvr-fill-black">Get in touch
+                      <i class="fa-solid fa-arrow-right icon-arrow-corner"></i>
+                    </a>
+                    <a href="#" class="btn btn-white hvr-white-primary">our works
+                      <i class="fa-solid fa-arrow-right icon-arrow-corner"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slide-single bg-image overlay-07" style="background-image: url(image/hero/hero-background.png);">
+          <div class="container">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-xxl-10 col-md-9" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+                <div class="hero-content">
+                  <div class="hero-content_text-block">
+                    <h1 class="hero-content__title heading-xxl text-sand">
+                      Timeless homes that are designed to be lived in
+                    </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                      in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
+                    </p>
+                  </div>
+                  <div class="hero-content_button-group">
+                    <a href="./contact.html" class="btn btn-primary hvr-fill-black">Get in touch
+                      <i class="fa-solid fa-arrow-right icon-arrow-corner"></i>
+                    </a>
+                    <a href="#" class="btn btn-white hvr-white-primary">our works
+                      <i class="fa-solid fa-arrow-right icon-arrow-corner"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-fluid-slider-navigation" id="heroSliderNav">
+        <div class="single-nav">
+          <span>01. Home Renovation</span>
+        </div>
+        <div class="single-nav">
+          <span>02. Home Renovation</span>
+        </div>
+        <div class="single-nav">
+          <span>03. Home Renovation</span>
+        </div>
+      </div>
+    </div>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~
+     What We Do
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div class="what-we-do hero-section-01" id="about">
+        <div class="container">
+          <div class="row row--hero-content">
+            <div class="col-xxl-auto " data-aos-duration="1000" data-aos="fade-right" data-aos-delay="300">
+              <div class="hero-content">
+                <h1 class="hero-content__title heading-xl text-sand">
+                  WHAT WE DO
+                </h1>
+                <p>
+                  For Tier 0-1 productions, we offer Color Correction services, ensuring that your footage reaches its full potential and enhances the visual storytelling of your narratives. Our team is dedicated to transforming your raw footage into extraordinary experiences, elevating the overall quality of your projects. <br> <br>
+                  Whether you need assistance with post-production tasks or are looking for a reliable team to shoot special events, ZONE PRODUCTIONS has the skills and capabilities to meet your needs. Our goal is to deliver exceptional results that exceed your expectations, making your projects stand out in the competitive world of Film and TV production.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-auto">
+            <div class="hero-content__image">
+              <img src="./image/home-1/hero-image.png" alt="" class="w-100">
+              <div class="hero-content__navigation-circle-wrapper">
+                <div class="hero-content__navigation-circle">
+                  <img src="./image/home-1/navigation-image.png" alt="" class="w-100">
+                  <a href="./contact.html" class="hero-content__navigation-circle-text d-block">
+                    <img src="./image/home-1/text-circle.png" alt="text circle" class="w-100">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="hero-content__details">
+              <div class="content__details-left">
+                <img class="trailers" src="./image/trailers.png" alt="img">
+                <div class="details-content">
+                  <h4>TRAILERS</h4>
+                  <h5>BEAUTIFUL, ORGANIZED CUTS.</h5>
+                  <p>ZONE PRODUCTIONS creates exciting Trailers for Feature Films, Documentaries, Commercials and TV Dramas. Our team was created to produce quality production pieces to aid our clients with marketable material to promote and sell their concepts, TV shows and films.<br>
+                    Character, tone, setting, genre, and originality are all required for a good trailer. Our goal is to make viewers want to watch the rest of the movie. You will receive high art technical editing with beautiful pacing and emotional depth.</p>
+                </div>
+              </div>
+              <div class="content__details-right">
+                <img class="grading" src="./image/grading.png" alt="">
+                <div class="details-content">
+                  <h4>COLOR CORRECTION / GRADING</h4>
+                  <h5>COLOR MOOD.</h5>
+                  <p>Our team of colorists bring decades of experience and technical know how to get the perfect look for your footage. We provide effective strategies and an efficient workflow tailored to your production and color management needs, whether it be for film or television. <br>
+                    On set color correction allows quick color adjustments to be made to the image by the colorist allowing them and others to see the image in a way much closer to how it will actually look on the screen of your choice.</p>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~
+    Project Section 02
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div id="services" class="project-section section-padding">
+      <div class="container-fluid portfolio-container">
+        <ul class="navigation-list navigation-list--inline divider-navigation-inline justify-content-center mb-res-60">
+          <li data-filter="*">
+            <button class="btn-reset active">Show All</button>
+          <li data-filter=".portfolio-1">
+            <button class="btn-reset">Trailer</button>
+          </li>
+          <li data-filter=".portfolio-2">
+            <button class="btn-reset">3D</button>
+          </li>
+          <li data-filter=".portfolio-3">
+            <button class="btn-reset">Video Editing</button>
+          </li>
+          <li data-filter=".portfolio-3">
+            <button class="btn-reset">Motion Design</button>
+          </li>
+          <li data-filter=".portfolio-3">
+            <button class="btn-reset">Color Correction</button>
+          </li>
+        </ul>
+        <div class="navigation-active-masonry isotope-navigation portfolio-v2 masonry-grid">
+          <div class="grid-item portfolio-1 portfolio-2">
+            <a href="portfolio-details.html" class="project-card d-block">
+              <div class="project-card__image">
+                <img src="./image/meso-1.png" alt="card" class="object-image">
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__body-top">
+                  <div class="project-card__body-texts">
+                    <h3 class="project-card__title">Brutalist lobby</h3>
+                    <span class="project-card__category">building</span>
+                  </div>
+                  <span class="project-card__date">2019</span>
+                </div>
+                <div class="project-card__body-bottom">
+                  <span class="project-card__button  hvr-fill-black">view details <i class="fa-solid fa-arrow-right icon-arrow-corner"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item  portfolio-1 portfolio-3 grid-item--height2 grid-item--width2">
+            <a href="portfolio-details.html" class="project-card d-block">
+              <div class="project-card__image">
+                <img src="./image/meso-0.png" alt="card" class="object-image">
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__body-top">
+                  <div class="project-card__body-texts">
+                    <h3 class="project-card__title">Brutalist lobby</h3>
+                    <span class="project-card__category">building</span>
+                  </div>
+                  <span class="project-card__date">2019</span>
+                </div>
+                <div class="project-card__body-bottom">
+                  <span class="project-card__button  hvr-fill-black">view details <i class="fa-solid fa-arrow-right icon-arrow-corner"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item portfolio-1 portfolio-2">
+            <a href="portfolio-details.html" class="project-card d-block">
+              <div class="project-card__image">
+                <img src="./image/meso-3.png" alt="card" class="object-image">
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__body-top">
+                  <div class="project-card__body-texts">
+                    <h3 class="project-card__title">Brutalist lobby</h3>
+                    <span class="project-card__category">building</span>
+                  </div>
+                  <span class="project-card__date">2019</span>
+                </div>
+                <div class="project-card__body-bottom">
+                  <span class="project-card__button  hvr-fill-black">view details <i class="fa-solid fa-arrow-right icon-arrow-corner"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item portfolio-2 portfolio-3">
+            <a href="portfolio-details.html" class="project-card d-block">
+              <div class="project-card__image">
+                <img src="./image/meso-2.png" alt="card" class="object-image">
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__body-top">
+                  <div class="project-card__body-texts">
+                    <h3 class="project-card__title">Brutalist lobby</h3>
+                    <span class="project-card__category">building</span>
+                  </div>
+                  <span class="project-card__date">2019</span>
+                </div>
+                <div class="project-card__body-bottom">
+                  <span class="project-card__button  hvr-fill-black">view details <i class="fa-solid fa-arrow-right icon-arrow-corner"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item portfolio-1 portfolio-2">
+            <a href="portfolio-details.html" class="project-card d-block">
+              <div class="project-card__image">
+                <img src="./image/meso-4.png" alt="card" class="object-image">
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__body-top">
+                  <div class="project-card__body-texts">
+                    <h3 class="project-card__title">Brutalist lobby</h3>
+                    <span class="project-card__category">building</span>
+                  </div>
+                  <span class="project-card__date">2019</span>
+                </div>
+                <div class="project-card__body-bottom">
+                  <span class="project-card__button  hvr-fill-black">view details <i class="fa-solid fa-arrow-right icon-arrow-corner"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Video Section 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="video-section ">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="hero-video-block position-relative">
+            <img src="./image/video-bg.png" alt=" video" class="w-100">
+            <a href="https://www.youtube.com/watch?v=zo9dJFo8H8g" data-fancybox class="btn-play sonar-emitter absolute-center btn-play ">
+              <i class="fa-solid fa-play"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Award Section 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div id="our_works" class="award-section bg-award text-white section-padding-120">
+      <div class="container">
+        <div class="section-heading text-center mb-res-60">
+          <span class="subtitle">What we achieved</span>
+          <h2 class="section-heading__title heading-md">Unique Aesthetic and Storytelling Attention to Detail and Craftsmanship High level Filmmaking</h2>
+        </div>
+        <div class="award-content-wrapper">
+          <div class="award-widget">
+            <span class="date">2014</span>
+            <h3 class="award-widget__title">Architecture Award</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+            <a href="#" class="award-widget__link"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="award-widget">
+            <span class="date">2016</span>
+            <h3 class="award-widget__title">Design Award</h3>
+            <p>
+              buiPraesent eu orci, volutpat vel proinlding
+            </p>
+            <a href="#" class="award-widget__link"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="award-widget">
+            <span class="date">2017</span>
+            <h3 class="award-widget__title">Best Renovation</h3>
+            <p>
+              Elit sed do eiusmod tempor incididunt magna
+            </p>
+            <a href="#" class="award-widget__link"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="award-widget">
+            <span class="date">2019</span>
+            <h3 class="award-widget__title">Structural architecture</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+            <a href="#" class="award-widget__link"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="award-widget">
+            <span class="date">2021</span>
+            <h3 class="award-widget__title">Innovation Award</h3>
+            <p>
+              Arcu tellus venenatis rutrum nullam luctus non
+            </p>
+            <a href="#" class="award-widget__link"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Client Section 
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div id="clients" class="award-section bg-award text-white section-padding-120">
+      <div class="container">
+        <div class="section-heading text-center mb-res-60">
+          <span class="subtitle">Client Base</span>
+          <h2 class="section-heading__title heading-md">We Proud of our Awards</h2>
+        </div>
+        <div class="award-content-wrapper">
+          <div class="row row--custom gutter-y-40 ">
+            <div class="col-xxl-4 col-lg-4 col-md-12">
+                <img src="./image/client-1.webp" alt="">
+            </div>
+            <div class="col-xxl-4 col-lg-4 col-md-12">
+              <img src="./image/client-2.webp" alt="">
+            </div>
+            <div class="col-xxl-4 col-lg-4 col-md-12">
+              <img src="./image/client-3.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    FAQ Section 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="faq-section section-padding-80" id="faq-section">
+      <div class="container">
+        <div class="row row--custom gutter-y-40 ">
+          <div class="col-xxl-4 col-lg-5 col-md-9">
+            <div class="faq-content">
+              <div class="faq-content__text-block">
+                <span class="subtitle">
+                  Have any question?
+                </span>
+                <h1 class="faq-content__title heading-md text-black mb-res-60">
+                  The most common questions from our clients
+                </h1>
+              </div>
+              <div class="faq-content__button">
+                <a href="./faq.html" class="btn btn-primary hvr-black-white">Ask your question
+                  <i class="fa-solid fa-arrow-right icon-arrow-corner"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-7 offset-lg-1 col-lg-6">
+            <div class="accordion-style" id="faq">
+              <div class="accordion-item">
+                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#faq-item" aria-expanded="true" aria-controls="faq-item">
+                  Who is ZONES target audience?
+                </button>
+                <div id="faq-item" class="accordion-collapse collapse show" data-bs-parent="#faq">
+                  <div class="accordion-item__body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vitae
+                    magna pulvinar laoreet. Nullam erat ipsum, mattis nec mollis a enim Nunc at
+                    euismod arcu. Aliquam ullamcorper
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-item-2" aria-expanded="false" aria-controls="faq-item-2">
+                  What post production services do you offer?
+                </button>
+                <div id="faq-item-2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                  <div class="accordion-item__body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vitae magna pulvinar laoreet.
+                    Nullam erat ipsum, mattis nec mollis a enim Nunc at euismod arcu. Aliquam ullamcorper
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-item-3" aria-expanded="false" aria-controls="faq-item-3">
+                  What type of special event videos do you produce and what is included.
+                </button>
+                <div id="faq-item-3" class="accordion-collapse collapse" data-bs-parent="#faq">
+                  <div class="accordion-item__body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vitae magna pulvinar laoreet.
+                    Nullam erat ipsum, mattis nec mollis a enim Nunc at euismod arcu. Aliquam ullamcorper
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-item-4" aria-expanded="false" aria-controls="faq-item-4">
+                  What is included in a trailer package.
+                </button>
+                <div id="faq-item-4" class="accordion-collapse collapse" data-bs-parent="#faq">
+                  <div class="accordion-item__body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vitae magna pulvinar laoreet.
+                    Nullam erat ipsum, mattis nec mollis a enim Nunc at euismod arcu. Aliquam ullamcorper
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-item-5" aria-expanded="false" aria-controls="faq-item-5">
+                  Will you be able to help the style of video I want?
+                </button>
+                <div id="faq-item-5" class="accordion-collapse collapse" data-bs-parent="#faq">
+                  <div class="accordion-item__body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vitae magna pulvinar laoreet.
+                    Nullam erat ipsum, mattis nec mollis a enim Nunc at euismod arcu. Aliquam ullamcorper
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-item-6" aria-expanded="false" aria-controls="faq-item-6">
+                  What’s the largest project you’ve ever worked on?
+                </button>
+                <div id="faq-item-6" class="accordion-collapse collapse" data-bs-parent="#faq">
+                  <div class="accordion-item__body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vitae magna pulvinar laoreet.
+                    Nullam erat ipsum, mattis nec mollis a enim Nunc at euismod arcu. Aliquam ullamcorper
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Testimonial Section 02
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div class="testimonial-section-02 overlay bg-fixed section-padding-140" style="background-image:url('image/home-1/testimonial-background.png')">
+      <div class="container">
+        <div class="row gutter-y-default justify-content-center justify-content-md-start">
+          <div class="col-lg-4 col-md-6 col-sm-10" data-aos-duration="1000" data-aos="fade-right">
+            <div class="testimonial-card">
+              <div class="rating-block">
+                <img src="./image/common/rating-image.png" alt="img">
+              </div>
+              <p>“ Aliquam scelerisque lectus quisque ac volutpat est, et bibendum ante. Maecenas rutrum, turpis eu placerat pretium, nulla justo ”</p>
+              <div class="user-block">
+                <h3 class="user-name">Mark Donnel</h3>
+                <span>Builder</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10" data-aos-duration="1000" data-aos="fade-right">
+            <div class="testimonial-card">
+              <div class="rating-block">
+                <img src="./image/common/rating-image.png" alt="img">
+              </div>
+              <p>“ Aliquam scelerisque lectus quisque ac volutpat est, et bibendum ante. Maecenas rutrum, turpis eu placerat pretium, nulla justo ”</p>
+              <div class="user-block">
+                <h3 class="user-name">Susana Medy</h3>
+                <span>Builder</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10" data-aos-duration="1000" data-aos="fade-right">
+            <div class="testimonial-card">
+              <div class="rating-block">
+                <img src="./image/common/rating-image.png" alt="img">
+              </div>
+              <p>“ Aliquam scelerisque lectus quisque ac volutpat est, et bibendum ante. Maecenas rutrum, turpis eu placerat pretium, nulla justo ”</p>
+              <div class="user-block">
+                <h3 class="user-name">Philip Bower</h3>
+                <span>Builder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Contact Section used in Home 2
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div class="contact-section section-padding-140_60" id="get_in_touch">
+      <div class="container">
+        <div class="row gutter-y-default justify-content-center justify-content-lg-between">
+          <div class="col-lg-5 col-md-7 col-sm-8 col-xs-9">
+            <div class="contact-content__image">
+              <img src="./image/contact-img.png" alt="" class="w-100">
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-8">
+            <div class="contact-content__heading text-center text-lg-start">
+              <span class="subtitle">GET IN TOUCH</span>
+              <h2 class="content-title heading-md mb-32">Contact our support team to grow your business</h2>
+            </div>
+            <div class="contact-form">
+              <form action="/">
+                <div class="row gutter-y-default">
+                  <div class="col-lg-6">
+                    <input type="text" placeholder="Full Name" class="form-control">
+                  </div>
+                  <div class="col-lg-6">
+                    <input type="text" placeholder="Phone Number" class="form-control">
+                  </div>
+                  <div class="col-lg-12">
+                    <input type="email" placeholder="Email Address" class="form-control">
+                  </div>
+                  <div class="col-lg-12">
+                    <textarea name="message" placeholder="Write Your Message" class="form-control"></textarea>
+                  </div>
+                  <div class="col-lg-12 ">
+                    <button class="btn btn-primary hvr-black-white send-msg">Send message
+                      <i class="fa-solid fa-arrow-right icon-arrow-corner"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~
+    Cta Section 2
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div class="cta-section-02">
+      <div class="container">
+        <div class="cta-section-02__wrapper">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="cta-content-02">
+                <div class="cta-content-02__text-block">
+                  <span class="subtitle">
+                    Get a consultation with our skilled designer
+                  </span>
+                  <h2 class="cta-content-02__title heading-md">
+                    Let's make something great together
+                  </h2>
+                </div>
+                <div class="cta-content-02__button">
+                  <a href="./contact.html" class="btn btn-black hvr-fill-black">Build a project with us
+                    <i class="fa-solid fa-arrow-right icon-arrow-corner"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~
+    Footer Section 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div class="footer-section bg-black padding-top-140">
+      <div class="container">
+        <div class="row row--footer-main gutter-y-50">
+          <div class="col-xl-4 col-lg-5 col-md-8">
+            <div class="footer-section__content-block">
+              <div class="footer-section__content-text">
+                <div class="footer-brand">
+                  <img src="./image/logo.svg" alt="image alt">
+                </div>
+                <p>
+                  Museums, markets, reindeer landscapes and dollhouses get the same care and attention to purpose.
+                </p>
+              </div>
+              <form action="#" class="newsletter-form-1">
+                <input type="email" placeholder="Enter your email" class="form-control">
+                <button class="submit-button icon-arrow-corner text-primary btn-reset"><i class="fa-solid fa-arrow-right"></i></button>
+              </form>
+            </div>
+          </div>
+          <div class="offset-xl-2 col-xl-6 offset-lg-1 col-lg-6">
+            <div class="row row--list-block">
+              <div class="col-auto">
+                <div class="footer-contact-block">
+                  <div class="single-block">
+                    <h3 class="footer-title">Find us</h3>
+                    <p>Dattner Architects <br>
+                  498Seventh Ave20th<br>
+                  FloorNew York, NY<br>
+                  10018</p>
+                  </div>
+                  <div class="single-block">
+                    <h3 class="footer-title">get in touch</h3>
+                    <ul class="list-style-regular row-gap-8">
+                      <li>
+                        <a href="#">+123 456789</a>
+                      </li>
+                      <li>
+                        <a href="#">admin@arcatec.com</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <h3 class="footer-title">Useful Links</h3>
+                <ul class="list-style-regular">
+                  <li>
+                    <a href="#">Pricing Plans</a>
+                  </li>
+                  <li>
+                    <a href="#"> Projects</a>
+                  </li>
+                  <li>
+                    <a href="#"> Press Media</a>
+                  </li>
+                  <li>
+                    <a href="#"> Career</a>
+                  </li>
+                  <li>
+                    <a href="#"> Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-block padding-top-140">
+        <div class="container">
+          <div class="copyright-row">
+            <div class="copyright-text">
+              <p>© 2023 Favdevs</p>
+            </div>
+            <ul class="divider-navigation-inline footer-social-list">
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                  <span>Twitter</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                  <span>Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Vendor Scripts -->
+  <script src="./plugins/jquery/jquery.min.js"></script>
+  <script src="./plugins/jquery/jquery-migrate.min.js"></script>
+  <script src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin's Scripts -->
+  <script src="./plugins/inlineSvg/inlineSvg.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/aos/aos.min.js"></script>
+  <script src="plugins/counter-up/waypoints.min.js"></script>
+  <script src="plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
+  <script src="./plugins/isotope/packery.pkgd.min.js"></script>
+  <script src="./plugins/isotope/image.loaded.js"></script>
+  <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
+  <script src="./plugins/isotope/packery.pkgd.min.js"></script>
+  <script src="./plugins/isotope/image.loaded.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="./plugins/countdown/jquery.countdown.js" defer></script>
+  <script src="js/custom.js"></script>
+  <script src="js/menu.js"></script>
+  <!-- Activation Script -->
+</body>
+
+</html>
