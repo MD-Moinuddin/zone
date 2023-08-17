@@ -24,14 +24,20 @@
     position: fixed !important;
 }
 
+@media (min-width: 992px) {
+    .hero-section-02 .hero-content p {
+        font-size: 18px;
+    }
+}
+
 /* what we do font size */
 .hero-section-01 .hero-content p {
     margin-bottom: 40px;
 }
 
-@media (min-width: 425px) {
+@media (min-width: 992px) {
     .hero-section-01 .hero-content p {
-      font-size: 14px;
+      font-size: 18px;
       margin-bottom: 0;
     }
 }
@@ -53,7 +59,7 @@
 /* Card text font size */
 @media (min-width: 425px) {
     .hero-content__details .details-content p {
-        font-size: 14px;
+        font-size: 18px;
     }
 }
 
