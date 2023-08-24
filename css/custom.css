@@ -128,6 +128,13 @@
     }
 }
 
+/* project details */
+@media (min-width: 992px) {
+    .object-image {
+        height: 227px;
+    }
+}
+
 /* section padding reduce for mobile */
 @media (max-width: 500px) {
     .section-padding {
