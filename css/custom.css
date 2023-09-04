@@ -44,7 +44,7 @@
 
 @media (max-width: 500px) {
     .video-bg-mobile {
-        background-size: contain;
+        /*background-size: contain;*/
         background-color: #000000;
     }
 }
