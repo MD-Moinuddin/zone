@@ -28,6 +28,7 @@
 
 .get-in-touch-mobile .icon-arrow-corner {
     transform: rotate(-45deg);
+    top: 0;
 }
 
 /* sticky navbar for mobile */
@@ -194,6 +195,10 @@
         background-color: black;
         padding: 120px 0 60px;
     }   
+
+    .object-image {
+        height: 320px;
+    }
 }
 
 .project-details .hero-content {
