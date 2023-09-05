@@ -48,10 +48,14 @@
         background-size: auto;
         background-color: #000000;
     }
+
+    .hero-fluid-slider .hero-slide-single {
+        min-height: 580px;
+    }
 }
 
 .overlay-07::before {
-    background: rgba(var(--black-2-rgb), 0.5);
+    background: rgba(var(--black-2-rgb), 0.3);
 }
 
 .hero-content-mobile-heading {
