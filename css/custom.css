@@ -50,7 +50,13 @@
     }
 
     .hero-fluid-slider .hero-slide-single {
-        min-height: 530px;
+        min-height: 490px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .hero-section-02 .hero-content__title {
+        font-size: 24px;
     }
 }
 
@@ -94,7 +100,7 @@
 /* hero 1 - remove whitespace for mobile */
 @media (max-width: 500px) {
     .hero-section-01 {
-        padding-top: 60px;
+        padding-top: 0px;
     }
 }
 
