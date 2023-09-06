@@ -294,12 +294,12 @@
 }
 
 /*client image */
-@media (max-width: 500px) {
+/*@media (max-width: 500px) {
     .client-img-mobile {
         width: 280px;
         height: 200px;
     }   
-}
+}*/
 
 .footer-brand img {
     width: 150px;
