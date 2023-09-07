@@ -228,3 +228,40 @@ $(".offcanvas").on("shown.bs.offcanvas", function () {
 $(".offcanvas").on("hide.bs.offcanvas", function () {
   $("body").removeClass("overflow-hidden");
 })
+
+
+const form = document.getElementById('contact-form');
+const popup = document.getElementById('message-popup');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            Accept: 'application/json'
+        }
+    });
+
+    if (response.ok) {
+        // Show the popup message on successful submission
+        popup.style.display = 'block';
+        setTimeout(function() {
+          popup.style.display = 'none';
+        }, 4000);
+        
+    } else {
+        // Error handling if the submission fails.
+        alert('Please fillup the required input');
+    }
+
+    form.reset();
+    return false;
+});
+
+// Function to close the popup
+function closePopup() {
+    popup.style.display = 'none';
+}
