@@ -60,11 +60,6 @@
     }
 }
 
-@media (max-width: 500px){
-    .hero-fluid-slider .hero-slide-single {
-        min-height: 660px;
-    }
-}
 
 @media (min-width: 768px) {
     .video-bg-mobile {
