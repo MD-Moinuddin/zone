@@ -2,6 +2,10 @@
     background-color: #59968F !important;
 }
 
+.preloader-wrapp .bar {
+    background-color: #59968F;
+}
+
 .project-card__button {
     background-color: #59968F !important;
 }
