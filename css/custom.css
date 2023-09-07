@@ -1,3 +1,15 @@
+.btn-primary {
+    background-color: #59968F !important;
+}
+
+.project-card__button {
+    background-color: #59968F !important;
+}
+
+.text-primary {
+    color: #59968F !important;
+}
+
 /* logo */
 .brand-logo {
     width: 200px;
@@ -59,7 +71,6 @@
         font-size: 24px;
     }
 }
-
 
 @media (min-width: 768px) {
     .video-bg-mobile {
@@ -146,6 +157,10 @@
     }
 }
 
+.hero-content__details .details-content h5 {
+    background-color: #59968F !important;
+}
+
 /* grid options for mobile */
 @media (max-width: 500px) {
     .hero-content__details {
@@ -164,7 +179,6 @@
     .hero-content__details .details-content h5 {
         display: inline-block;
         padding: 3px 6px;
-        background-color: #6E50FF;
         color: #ffffff;
         font-size: 15px;
         margin: 10px 0;
@@ -320,5 +334,5 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    color: #6E50FF;
+    color: #59968F;
 }
